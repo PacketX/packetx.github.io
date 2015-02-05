@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.packetx.biz"
+           xmlns="http://www.packetx.biz" elementFormDefault="qualified">
+           
+    <xsd:element name="product">
+      <xsd:complexType>
+        <xsd:sequence>
+          <xsd:element name="name" minOccurs="1" maxOccurs="1" type="xsd:string"></xsd:element>
+          <xsd:element name="version" minOccurs="1" maxOccurs="1" type="xsd:string"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:string" use="required"></xsd:attribute>
+        <xsd:attribute name="load" type="xsd:boolean"></xsd:attribute>
+      </xsd:complexType>
+      <xsd:key name="productKey">
+        <xsd:selector xpath="."/>
+        <xsd:field xpath="@name"/>
+      </xsd:key>
+      <xsd:unique name="UniqueLoad">
+          <xsd:selector xpath="."/>
+          <xsd:field xpath="@load"/>
+      </xsd:unique>
+    </xsd:element>
+    
+    <xsd:element name="packetx">
+      <xsd:complexType>
+        <xsd:sequence>
+          <xsd:element ref="product" minOccurs="1" maxOccurs="unbounded"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

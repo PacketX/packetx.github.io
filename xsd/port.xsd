@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.packetx.biz/GrismEditor" xmlns="http://www.packetx.biz/GrismEditor" elementFormDefault="qualified">
+    
+    <xsd:element name="bitRates" default="1G">
+      <xsd:simpleType>
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="10G"></xsd:enumeration>
+          <xsd:enumeration value="1G"></xsd:enumeration>
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:element>
+    
+    <xsd:element name="useAs">
+      <xsd:simpleType>
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value=""></xsd:enumeration>
+          <xsd:enumeration value="in"></xsd:enumeration>
+          <xsd:enumeration value="out"></xsd:enumeration>
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:element>
+    
+    <xsd:element name="port">
+      <xsd:complexType>
+        <xsd:all>
+          <xsd:element ref="bitRates" minOccurs="0" maxOccurs="1"></xsd:element>
+          <xsd:element name="description" minOccurs="0" maxOccurs="1" type="xsd:string"></xsd:element>
+          <xsd:element ref="useAs" minOccurs="0" maxOccurs="1"></xsd:element>
+          <xsd:element name="prev" minOccurs="0" maxOccurs="1" type="xsd:string"></xsd:element>
+          <xsd:element name="next" minOccurs="0" maxOccurs="1" type="xsd:string"></xsd:element>
+        </xsd:all>
+        <xsd:attribute name="id" type="xsd:string" use="required"></xsd:attribute>
+      </xsd:complexType>
+      <xsd:key name="portKey">
+        <xsd:selector xpath="."/>
+        <xsd:field xpath="@id"/>
+      </xsd:key>
+    </xsd:element>
+</xsd:schema>
