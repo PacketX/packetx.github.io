@@ -284,16 +284,24 @@ body:after {
 	padding:48px 0 8px 280px;
 	border-bottom:1px solid #CCC;
 	color:#0096dc;
-	font-size:15px;
+	font-size:16px;
 	font-weight:bold;
 }
 .propic2{
 	position:absolute;
-	margin:15px 0 0 500px ;
+	margin:90px 0 0 500px ;
 }
 .propic3{
 	position:absolute;
-	margin:-20px 0 0 500px ;
+	margin:-90px 0 0 500px ;
+}
+.propic4{
+	position:absolute;
+	margin:30px 0 0 500px ;
+}
+.propic5{
+	position:absolute;
+	margin:10px 0 0 500px ;
 }
 
 .procont2{
@@ -307,7 +315,7 @@ body:after {
 	padding:5px;
 }
 .pro1tab{
-	margin-top:20px;
+	margin-top:40px;
 }
 .pro1tab table tr td{
 	border-bottom:1px solid #E4E4E4;

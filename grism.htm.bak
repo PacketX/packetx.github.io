@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="application-name" content="packetx website 瑞擎數位有限公司網站">
+<meta name="description" content="PacketX’s focus is developing DPI-enabled systems for IP network in three fields: sophisticated network visibility, off-line packet stream analysis and packet2BigData.">
+<meta name="keywords" content="DPI-enabled systems, Deep packet inspection, Sophisticated Network Visibility, Off-line Packet Stream Analysis, Packet2BigData, Metadata extraction, packetx, Clever TAP, GRISM, TURING, ENLIGHTEN, 瑞擎數位有限公司">
+<title>:::PacketX Technology 瑞擎數位有限公司:::</title>
+<link href="reset.css" rel="stylesheet" type="text/css" />
+<link href="packetx.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="images/ico.ico">
+</head>
+
+<body>
+<div class="topbar"></div>
+<div id="layout">
+  <div>
+  <a href="index.htm"><img src="images/packetx_p14.png"/></a></div>
+  <div class="navout">
+  		<a href="#"><div class="nav n01"></div></a>
+        <div class="nav n02a"></div>
+        <a href="#"><div class="nav n03"></div></a>
+        <a href="about.htm"><div class="nav n04"></div></a>
+    	<a href="#"><div class="nav n05"></div></a>
+        <a href="contact.htm"><div class="nav n06"></div></a>
+  </div>
+  <div class="article">
+    <div class="propic1"><img src="images/grism.png"/ alt="grism" title="grism"></div>
+    <p class="procont1">The Smartest L2-L7 Packet Processing System</p>
+    <h3>Keep your network visible, Take actions!</h3>
+    <div>
+      <p>Mirroring traffic on IP network is more important than ever. The traffic, a huge packet stream, is just the data source to be consumed by many packet-based analysis applications such as trouble shooting system, intrusion detection, virus scan, traffic analysis, security event alerts and even behavior discovery. It is definitely an important agenda of today: to make sure the traffic is visible to those applications and those application process the packet stream efficiently.</p>
+      <p>In traditional ways, those application systems access the source from the span ports of network devices or TAPs. However, each application has its preferred packets for its unique interest so that processing the whole packet stream without selection for each is a waste. In fact, the preferred packets may even appear in more than one ports of different network device. It further implies the application system has to equip many physical ports to connect to span ports or TAPs although only a few of packets in the source are needed. This encourages the approach as below:</p>
+      <p style=" font-style:italic">To aggregate the mirrored traffic from several span ports or TAPs on the production IP network and then distribute/replicate to multiple applications according to different interest.</p>
+      <p>The performance of those application systems can only decay when IP traffic and network complexity grow exponentially.  We had better to adopt this approach before the packet flood burst the application systems. Otherwise, the traffic will be too big to be visible for each application very soon.</p>
+    </div>    
+    <h3>Answer for today and future: GRISM</h3>
+    <div>
+      <div class="propic2"><img src="images/grism_p1.png"/></div>
+      <p class="procont2">GRISM is powered by PacketX DPI engine to tackle the challenges and realized the approach mentioned above.</p>
+      <p style=" font-weight:bold;">Accurate Delivery</p>
+      <p class="procont2">It aggregates several inputs and accurately delivers the right packets to the right application not only by L3/L4 header but also the sophisticated patterns. To improve the delivery accuracy, GRISM has the hardware-accelerated regular expression engine for the sophisticated pattern matching such as: filter the sessions for the specific HTTP URL, filter the SIP messages for the given SIP URI or filter all the FTP protocol packets (not by FTP port number).</p>
+      <p class="procont2">The filtered packet stream can be distributed to more than one ports. GRISM can adopt two balance strategies: <br />
+      (1) the packets in the same session are delivered to the same destination; <br />
+      (2) the packets for the same subscribers are delivered to the same destination. The second one is suitable for ISP or 3G/LTE operators for ID-aware visibility. </p>
+      <div class="propic3"><img src="images/grism_p2.png"/></div>
+      <p style=" font-weight:bold;">Easy Configuration</p>
+      <p class="procont2">GRISM also provides the web-based GUI for easy configuration and management. Users can quickly build the complicated filter rules which is a union or intersection of several atomic filters. Moreover, users can create a graph to describe the relation between input ports/filter rules/output ports for a complete network visibility architecture. </p>
+      <p style=" font-weight:bold;">Robustness and Scalability</p>
+      <p class="procont2">GRISM T1 is a 1U appliance with the carrier-grade robustness. Several GRISM T1s can form a packet processing pool with linear scalability while single GRISM T1 may fit small/middle-scale network. It is definitely the best choice for a progressively developing network to justify the investments on many existed and future applications.</p>
+      <div align="center"><img src="images/grism_p3.png"/></div>
+    </div>
+    <div class="pro1tab">
+    <table width="1000" border="0" cellpadding="5" cellspacing="1">
+  <tr>
+    <td width="45%" colspan="2" align="center" valign="middle" bgcolor="#0096dc" class="wht13">Technical Spec</td>
+    <td width="55%" colspan="2" align="center" valign="middle" bgcolor="#0096dc" class="wht13">Features</td>
+    </tr>
+  <tr>
+    <td align="right"><strong>Physical Ports</strong></td>
+    <td>GbE/RJ45*8, 10Gb/SFP+*2(Service),</td>
+    <td align="right"><strong>Service Port Functions</strong></td>
+    <td>Can be configured for input or output</td>
+  </tr>
+  <tr>
+    <td align="right">&nbsp;</td>
+    <td>GbE management port/RJ45*1</td>
+    <td align="right">&nbsp;</td>
+    <td>Support 10G link and 1G link</td>
+  </tr>
+  <tr>
+    <td align="right">&nbsp;</td>
+    <td>Console port*1</td>
+    <td align="right">&nbsp;</td>
+    <td>GbE LAN by-pass pairs*4</td>
+  </tr>
+  <tr>
+    <td align="right"><strong>Storage</strong></td>
+    <td>SATA 2.0*2</td>
+    <td align="right"><strong>Smart TAP</strong></td>
+    <td>1. Traffic aggregation: many to one</td>
+  </tr>
+  <tr>
+    <td align="right">&nbsp;</td>
+    <td>USB 2.0*2</td>
+    <td align="right">&nbsp;</td>
+    <td>2. Traffic replication: one to many</td>
+  </tr>
+  <tr>
+    <td align="right">&nbsp;</td>
+    <td> 2.5 inch SATA bay *2</td>
+    <td align="right"><strong>Packet Filtering</strong></td>
+    <td>1. L2-L4 field value matching</td>
+  </tr>
+  <tr>
+    <td align="right">&nbsp;</td>
+    <td>2.5 inch SSD *2 (Option)</td>
+    <td align="right">&nbsp;</td>
+    <td>2. String pattern matching</td>
+  </tr>
+  <tr>
+    <td align="right"><strong>Management</strong></td>
+    <td>IPMI</td>
+    <td align="right">&nbsp;</td>
+    <td>3. Regular Expression pattern matching</td>
+  </tr>
+  <tr>
+    <td align="right"><strong>Power</strong></td>
+    <td>AC 200Watt</td>
+    <td align="right">&nbsp;</td>
+    <td>4. Protocol-based filtering</td>
+  </tr>
+  <tr>
+    <td align="right">&nbsp;</td>
+    <td>Input AC 120V-240V</td>
+    <td align="right"><strong>Load Balance </strong></td>
+    <td>1. Session-aware distribution</td>
+  </tr>
+  <tr>
+    <td align="right"><strong>Cooling</strong></td>
+    <td>Fans*4</td>
+    <td align="right">&nbsp;</td>
+    <td>2. ID-aware by RADIUS/GTP-C distribution</td>
+  </tr>
+  <tr>
+    <td align="right"><strong>Compliance</strong></td>
+    <td>EMC safety, CE/FCC/UL</td>
+    <td align="right"><strong>Packet Modification</strong></td>
+    <td>1. MPLS tag removal</td>
+  </tr>
+  <tr>
+    <td align="right"><strong>Physical Chracteritics</strong></td>
+    <td>426*345*44 mm</td>
+    <td align="right">&nbsp;</td>
+    <td>2. De-tunnel</td>
+  </tr>
+  <tr>
+    <td align="center">&nbsp;</td>
+    <td>5kg</td>
+    <td align="right">&nbsp;</td>
+    <td>3. Packet-slicing</td>
+  </tr>
+  <tr>
+    <td align="center">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td align="right">&nbsp;</td>
+    <td>4. Adding VLAN tag</td>
+  </tr>
+  <tr>
+    <td align="center">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td align="right"><strong>Packet Filtering Management Interface</strong></td>
+    <td>1. Web-based GUI</td>
+  </tr>
+  <tr>
+    <td align="center">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td align="right">&nbsp;</td>
+    <td>2. Filter graph configuration</td>
+  </tr>
+</table>
+</div>
+  </div>
+</div>
+<div id="footer">
+  <div>© 2014 PacketX Technology Ltd. All Rights Reserved.</div>
+</div>
+</body>
+</html>
