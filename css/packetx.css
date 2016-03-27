@@ -39,6 +39,10 @@ body,html{
 	border-left:3px solid #005691;
 	color:#005691;
 }
+.nav a.on span{
+	border-left:3px solid #005691;
+	color:#005691;
+}
 .kv{
 	position:relative;
 	width:100%;
@@ -80,6 +84,13 @@ h1{
 	text-align:center;
 	margin:40px 20px;
 }
+.news a{
+	color:#0096dc;
+	text-decoration:none;
+}
+.news a:hover{
+	color:#005691;
+}
 .news>div{
 	display:inline-block;
 	width:30%;
@@ -90,14 +101,6 @@ h1{
 h2{
 	margin-bottom:10px;
 	font-size:17px;
-}
-h2 a{
-	color:#0096dc;
-	font-weight:500;
-	text-decoration:none;
-}
-h2 a:hover{
-	color:#005691;
 }
 .newspic{
 	display:inline-block;
@@ -114,6 +117,7 @@ h2 a:hover{
 	font-weight:300;
 	width:50%;
 	vertical-align: top;
+	color:#666;
 }
 .garybt{
 	position: relative;
@@ -128,7 +132,7 @@ h2 a:hover{
 .garybt:hover{
 	background-color: #999;
 }
-.garybt a{
+.garybt a,.garybt a:hover{
 	color:#FFF;
 	text-decoration: none;
 }
@@ -156,6 +160,13 @@ h2 a:hover{
 .article:last-child{
 	border-bottom: none;
 	padding-bottom:50px;
+}
+.article p{
+	padding-bottom:15px;
+}
+.sign{
+	text-align:right;
+	font-style:italic;
 }
 h3{
 	font-size:20px;
@@ -250,4 +261,14 @@ h4{
 }
 .pro1tab2{
 	display:none;
+}
+.newsctpic{
+	width:45%;
+	text-align:center;
+	display:inline-block;
+	margin:10px 2.2%;
+	border:1px solid #ccc;
+}
+.newsctpic img{
+	width:100%;
 }
