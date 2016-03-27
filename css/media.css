@@ -185,7 +185,7 @@ h2{
 	text-align:center;
 }
 }
-@media screen and (max-width:450px){
+@media screen and (max-width:500px){
 .logo{
 	width:40%;
 }
@@ -282,6 +282,16 @@ h2{
 }
 .pro1tab2 tr td.tab1.tc{
 	text-align:center;
+}
+.newsctpic{
+	width:90%;
+	text-align:center;
+	display:inline-block;
+	margin:10px 4%;
+	border:1px solid #ccc;
+}
+.newsctpic img{
+	width:100%;
 }
 }
 @media screen and (max-width:380px){
