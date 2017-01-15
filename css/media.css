@@ -29,6 +29,9 @@ h2{
 	width:90%;
 	margin:0 5%;
 }
+.aboutcont{
+	width:90%;
+}
 .txt{
 	width:65%;
 }
@@ -292,6 +295,14 @@ h2{
 }
 .newsctpic img{
 	width:100%;
+}
+.aboutbigpic{
+	height: 400px;
+	background-size: cover; 
+}
+.abouth1{
+	top:310px;
+	text-shadow: 0 0 5px #000;
 }
 }
 @media screen and (max-width:380px){

@@ -272,3 +272,19 @@ h4{
 .newsctpic img{
 	width:100%;
 }
+.aboutbigpic{
+	width: 100%;
+	height: 600px;
+	background: url(../images/kv01.jpg) center;
+}
+.aboutcont{
+	width:1000px;
+	margin:0 auto;
+	padding-top:20px;
+	line-height:24px;
+	font-size:12px; 
+}
+.abouth1{
+	top:460px;
+	text-shadow: 0 0 5px #000;
+}
