@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="application-name" content="packetx website 瑞擎數位有限公司網站">
+<meta name="description" content="PacketX’s focus is developing DPI-enabled systems for IP network in three fields: sophisticated network visibility, off-line packet stream analysis and packet2BigData.">
+<meta name="keywords" content="DPI-enabled systems, Deep packet inspection, Sophisticated Network Visibility, Off-line Packet Stream Analysis, Packet2BigData, Metadata extraction, packetx, Clever TAP, GRISM, TURING, ENLIGHTEN, 瑞擎數位有限公司">
+<title>:::PacketX Technology 瑞擎數位有限公司:::</title>
+<link href="reset.css" rel="stylesheet" type="text/css" />
+<link href="packetx.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="images/ico.ico">
+</head>
+
+<body>
+<div class="topbar"></div>
+<div id="layout">
+  <div>
+  <a href="index.htm"><img src="images/packetx_p14.png"/></a></div>
+  <div class="navout">
+  		<a href="#"><div class="nav n01"></div></a>
+        <div class="nav n02a"></div>
+        <a href="#"><div class="nav n03"></div></a>
+        <a href="about.htm"><div class="nav n04"></div></a>
+    	<a href="#"><div class="nav n05"></div></a>
+        <a href="contact.htm"><div class="nav n06"></div></a>
+  </div>
+  <div class="article">
+    <div class="propic1"><img src="images/grism.png"/ alt="grism" title="grism"></div>
+    <p class="procont1">The Pivot to Boost Your Analysis Power</p>
+    <div>
+      <p>Mirroring IP network traffic is more important than ever. Network traffic, huge packet stream, is raw source to be consumed by varied analysis devices for security, network performance, application performance, audit and even behavior discovery… Those results of analysis are critical for the network owner to form the business decisions. It then becomes a key agenda today: manage traffic to be delivered /visible to analysis systems in an efficient way.  Traditionally, those analysis systems access the source from the span ports of network devices or TAPs. However, each system has its preferred packets, comes from many, for its interest: to process every packet without selection is a waste. That is, both CPU efficiency and the port usage of analysis system are low. This encourages the approach as below: </p>
+      <p>To aggregate the mirrored traffic from several span ports or TAPs on the production IP network and then distribute/replicate to multiple analysis system according to different interest. </p>
+      <p>Without changing, the overall performance can only decay when network traffic and network complexity grow exponentially.  The network owner had better to adopt this approach before the packet flood burst the analysis systems and even ruin the new business opportunities. Otherwise, the traffic will be too big to be visible very soon.  </p>
+    </div>    
+    <h3>Answer for today and future: GRISM</h3>
+    <div>
+      <div class="propic2"><img src="images/grism_p1.png" width="500" /></div>
+      <p>GRISM, the intelligent network packet broker, is powered by PacketX’s DPI engine and U-Defined Networking, UDN, framework to tackle the challenges and realized the approach mentioned above.</p>
+      <p style="font-weight:bold;">Filter and Accurate Delivery</p>
+      <p class="procont2">It aggregates several inputs and accurately delivers the right packets to the right system not only by L2-L4 header(VLAN ID, Tag Priority, Ethertype,IP address, IP range,TCP/UDP port…) but also the sophisticated patterns. For delivery accuracy, GRISM has the hardware-accelerated DPI engine for the sophisticated pattern matching such as: filter the sessions by the specific HTTP URL, filter the SIP messages by the given SIP URI or filter all the RTP protocol packets. The pattern can be an unbounded ASII string, HEX or the regular expression.</p>
+      <p class="procont2">The filtering capability of GRISM can be session-aware. The whole session would be sent to the same destination if any packet in that session is selected. It is helpful for the analysis systems since their processing functions rely on session integrity.</p>
+      <p class="procont2">Moreover, GRISM’s Equal-Distribution mechanism is different from the ACL-based distribution which is implemented in many network packet brokers or switch. GRISM can satisfy each analysis system simultaneously while other network packet brokers deliver each packet to only one system that against demand intersection.</p>
+      <div class="propic3"><img src="images/grism_p2.png" width="500" /></div>
+      <p style="font-weight:bold;">5-tuple Load Balance</p>
+      <p class="procont2">The filtered packet stream can be distributed to more than one port. GRISM can adopt the 5-tuple session-based balancing policy to guarantee “the packets in the same session are delivered to the same destination” which is critical to the analysis systems. High availability is also achieved by redistributing the stream into live links or triggering stream fail-over to the stand-by links.</p>
+      <div class="propic4"><img src="images/grism_p31.png" width="250" /><img src="images/grism_p32.png" width="250" /></div>
+      <p style="font-weight:bold;">Visualize the Visibility Architecture</p>
+      <p class="procont2">GRISM UDN framework has the web-based GUI, GRISM web console, for configuration and management. Users can easily design the complex filter which is a union (or) or intersection (AND) of several atomic filtering rules. Moreover, the user-specific visibility architecture can be designed by manipulating the graph which represents the relation between ports/filters and configuration. All the filtering and load balance features addressed before can be achieved on this GUI.</p>
+      <div class="propic5"><img src="images/grism_p3.png" width="500" /></div>
+      <p style="font-weight:bold;">Robustness and Scalability</p>
+      <p class="procont2">GRISM-T2G8 is a carrier grade 1U appliance with 10G and 1G port so that suitable for SMB with 1G/10G co-existed network. GRISM-T16 is the scalable ATCA-based carrier-grade system for large enterprises or telco for building up the visibility platform to boot their analysis power.</p>
+    </div>
+    <div class="pro1tab">
+    <table width="1000" border="1" cellpadding="5" cellspacing="1">
+    <colgroup>
+      <col style="background-color:#0096dc;" />
+    </colgroup>
+    <tbody>
+      <tr>
+        <td class="wht13"></td>
+        <td>GRISM T1<br/>(GRISM PLUS)</td>
+        <td>GRISM T16</td>
+        <td>GRISM T24</td>
+        <td>GRISM T32</td>
+      </tr>
+      <tr>
+        <td class="wht13">Network<br/>Interface</td>
+        <td>10G SFP+ *2<br/>1G RJ45 *8</td>
+        <td>10G/1G SFP+ *16</td>
+        <td>10G/1G SFP+*24</td>
+        <td>10G/1G SFP+*32</td>
+      </tr>
+      <tr>
+        <td class="wht13">Management<br/>Interface</td>
+        <td>1G RJ45*1</td>
+        <td>1G SFP *1</td>
+        <td>1G SFP *1</td>
+        <td>1G SFP *1</td>
+      </tr>
+      <tr>
+        <td class="wht13">Management<br/>Protocol</td>
+        <td>HTTP/HTTPS</td>
+        <td>HTTP/HTTPS</td>
+        <td>HTTP/HTTPS</td>
+        <td>HTTP/HTTPS</td>
+      </tr>
+      <tr>
+        <td class="wht13">Data Processing</td>
+        <td>Ethernet packet<br/>PCAP file</td>
+        <td>Ethernet packet</td>
+        <td>Ethernet packet</td>
+        <td>Ethernet packet</td>
+      </tr>
+      <tr>
+        <td class="wht13">Storage</td>
+        <td>SATA<br/>SSD 256 G* 2</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td class="wht13">Back Plane</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>40G</td>
+        <td>40G</td>
+      </tr>
+      <tr>
+        <td class="wht13">Mechanical</td>
+        <td>Appliance</td>
+        <td>ATCA 1U<br/>one blade</td>
+        <td>ATCA 2U<br/>two blade</td>
+        <td>ATCA 3U<br/>two blade</td>
+      </tr>
+      <tr>
+        <td class="wht13">Power</td>
+        <td>110-220V input</td>
+        <td>DC -48V input<br/>(AC-DC PDU is not included)</td>
+        <td>DC -48V input<br/>(AC-DC PDU is not included)</td>
+        <td>Dual AC 110-220V input</td>
+      </tr>
+    </tbody>
+    </table>
+    <h3>Features</h3>
+    <table width="1000" border="0" cellpadding="5" cellspacing="1">
+      <tr>
+        <td align="right" width="300"><strong>Service Port Configuration</strong></td>
+        <td>Each port can be configured as either input or output.</td>
+      </tr>
+      <tr>
+        <td align="right"><strong>Packet Filtering</strong></td>
+        <td>1. L2-L4 field value matching</td>
+      </tr>
+      <tr>
+        <td align="right">&nbsp;</td>
+        <td>2. L2-L7 String pattern matching</td>
+      </tr>
+      <tr>
+        <td align="right">&nbsp;</td>
+        <td>3. Regular Expression pattern matching</td>
+      </tr>
+      <tr>
+        <td align="right">&nbsp;</td>
+        <td>4. In-tunnl filtering: GRE, GTP, MPLS, QinQ</td>
+      </tr>
+      <tr>
+        <td align="right"><strong>Load Balance </strong></td>
+        <td>1. Session-based/Flow-integrity</td>
+      </tr>
+      <tr>
+        <td align="right">&nbsp;</td>
+        <td>2. Redistribution or fail over if link fails </td>
+      </tr>
+      <tr>
+        <td align="right"><strong>Flow Log Generation</strong></td>
+        <td>1. Netflow V5</td>
+      </tr>
+      <tr>
+        <td align="right">&nbsp;</td>
+        <td>2. Application Visibility Log(option)</td>
+      </tr>
+      <tr>
+        <td align="right"><strong>Packet Modification</strong></td>
+        <td>1. MPLS/VLAN tag strip</td>
+      </tr>
+      <tr>
+        <td align="right">&nbsp;</td>
+        <td>2. Adapting Packet-slicing(user-defined length or cutting TCP payload  ) </td>
+      </tr>
+      <tr>
+        <td align="right">&nbsp;</td>
+        <td>3. Source or Destination VLAN tagging</td>
+      </tr>
+      <tr>
+        <td align="right"><strong>Packet Stream Replay and Recording</strong></td>
+        <td>1. Replay PCAP file as input stream</td>
+      </tr>
+      <tr>
+        <td align="right">&nbsp;</td>
+        <td>2. Local or remote PCAP</td>
+      </tr>
+    </table>
+  </div>
+  <div align="center"><img src="images/grism_p41.png" width="400" /><img src="images/grism_p42.png" width="300" /></div>
+  </div>
+</div>
+<div id="footer">
+  <div>© 2016 PacketX Technology Ltd. All Rights Reserved.</div>
+</div>
+</body>
+</html>
