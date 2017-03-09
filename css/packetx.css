@@ -215,27 +215,34 @@ h4{
 	font-weight:600;
 	padding:10px 0;
 }
+th.diagonalFalling {
+	background: linear-gradient(to right top, #ffffff 0%,#ffffff 49.9%,#000000 50%,#000000 51%,#ffffff 51.1%,#ffffff 100%);
+}
+th.diagonalFalling span {
+	display: inline-block;
+    width: 100%;
+}
 .pro1tab{
 	font-size:12px;
 	color:#666;
 	width:1000px;
 }
-.pro1tab tr td{
+/*.pro1tab tr td{
 	border-bottom:1px solid #ccc;
-}
+}*/
 .tab1{
 	font-size:14px;
 	color:#fff;
 	font-weight:600;
 	text-align:center;
 }
-.pro1tab tr td:nth-child(odd){
+/*.pro1tab tr td:nth-child(odd){
 	text-align:right;
 	font-weight:600;
 }
 .pro1tab tr td.tab1.tc{
 	text-align:center;
-}
+}*/
 .contxt{
 	display:inline-block;
 	width:42%;
