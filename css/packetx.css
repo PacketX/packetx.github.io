@@ -18,38 +18,83 @@ body,html{
 	text-align:center;
 	width:15%;
 }
-.nav{
-	display:inline-block;
+/*.nav{
 	font-size:18px;
+	display:inline-block;
 	width:83%;
 	text-align:right;
 }
 .nav a{
 	color:#0096dc;
 	text-decoration:none;
+}*/
+.navbar{
+    margin-bottom:0;
 }
-.nav span{
+.container-fluid{
+	background:rgba(255,255,255,0.95);
+	box-shadow:0 2px 5px rgba(0,0,0,0.5);
+	height:60px;
+	width:100%;
+}
+.navbar-header{
+    z-index:50;
+    position:relative;
+}
+.navbar-brand{
+    height:60px;
+}
+#packetx-navbar{
+	height:100%!important;
+}
+#packetx-navbar .nav.navbar-nav{
+	height:18px;
+	line-height:18px;
+    transform:translateY(32px);
+}
+.nav.navbar-nav a{
+    padding-top:0;
+    padding-bottom:0;
+}
+.nav.navbar-nav span{
 	display:inline-block;
+	font-size:18px;
+	color:#0096dc;
 	font-weight:500;
 	border-left:3px solid #0096dc;
 	padding-left:5px;
-	margin-left:50px;
+	height:18px;
+	line-height:18px;
+	/*margin-left:50px;*/
 }
 .nav span:hover{
 	border-left:3px solid #005691;
 	color:#005691;
 }
-.nav a.on span{
+.navbar-default .navbar-nav a span:hover{
 	border-left:3px solid #005691;
 	color:#005691;
 }
+/*.nav a.on span{
+	border-left:3px solid #005691;
+	color:#005691;
+}*/
+.navbar-default .navbar-nav>.active>a span, .navbar-default .navbar-nav>.open>a span{
+	border-left:3px solid #005691;
+	color:#005691;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.open>a{
+    background-image:none;
+    background-color:transparent;
+}
 .kv{
 	position:relative;
+	overflow:hidden;
 	width:100%;
 	height:calc(100% - 60px);
-	overflow:hidden;
 	top:60px;
 	z-index:-1;
+    /*margin-top:60px;*/
 }
 .kv div{
 	width:100%;
@@ -98,7 +143,8 @@ h1{
 	text-align:left;
 	margin:0 5px;
 }
-h2{
+.news h2{
+	margin-top:0px;
 	margin-bottom:10px;
 	font-size:17px;
 }
@@ -147,7 +193,7 @@ h2{
 	display:none;
 }
 .cont{
-	width:1000px;
+	width:1080px;
 	margin:0 auto;
 	padding-top:80px;
 	line-height:24px;
@@ -208,6 +254,10 @@ h3{
 	width:52%;
 	vertical-align:top;
 	text-align:right;
+}
+.specpic figure{
+	display:inline-block;
+	vertical-align:top;
 }
 h4{
 	font-size:16px;
@@ -294,4 +344,8 @@ th.diagonalFalling span {
 .abouth1{
 	top:460px;
 	text-shadow: 0 0 5px #000;
+}
+.dynamic-block{
+    display:inline-block;
+    vertical-align:top;
 }

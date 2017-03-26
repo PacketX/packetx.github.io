@@ -9,11 +9,19 @@
 <title>:::PacketX Technology 瑞擎數位股份有限公司:::</title>
 <link rel="shortcut icon" href="images/ico.ico">
 <link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Poppins:400,700,500,300,600' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"/>
+
 <link href="css/packetx.css" rel="stylesheet" type="text/css" />
 <link href="css/media.css" rel="stylesheet" type="text/css" />
-<link href='https://fonts.googleapis.com/css?family=Poppins:400,700,500,300,600' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/packetx.js"></script>
 <script>
 $( document ).ready( function() {
@@ -23,11 +31,19 @@ $( document ).ready( function() {
 function adjustFooter() {
 	var $footer = $(".footer");
 	var windowHeight = $(window).height();
+    var footerHeight = windowHeight - $(".cont").outerHeight() - 40;
+	if (footerHeight > 0) {
+		$footer.height(footerHeight);
+	} else {
+		$footer.height(40);
+	}
+	/*var $footer = $(".footer");
+	var windowHeight = $(window).height();
 	if (windowHeight > 633) {
 		$footer.css("height", (windowHeight - 593).toString() + "px");
 	} else {
 		$footer.css("height", "40px");
-	}
+	}*/
 }
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -41,7 +57,7 @@ function adjustFooter() {
 </head>
 
 <body background="images/packetx_p01.gif">
-<div class="top">
+<!--<div class="top">
 	<div class="logo"><a href="index.html"><img src="images/packetx.png"/></a></div>
     <div class="nav">
     	<a href="#"><span>Enlighten</span></a>
@@ -64,7 +80,34 @@ function adjustFooter() {
             </ul>
         </div>
     </div>
-</div>
+</div>-->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#packetx-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img alt="PacketX" src="images/packetx.png"/></a>
+    </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="packetx-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="about.html"><span>About Us</span></a></li>
+        <li><a href="#"><span>Enlighten</span></a></li>
+        <li><a href="grism.html"><span>Grism</span></a></li>
+        <li><a href="#"><span>Turing</span></a></li>
+        <li><a href="download.html"><span>Download</span></a></li>
+        <li><a href="news.html"><span>News</span></a></li>
+        <li class="active"><a href="#"><span>Contact Us</span><span class="sr-only">(current)</span></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 <div class="cont">
     <h3>PacketX Technology</h3>
     <div class="contxt">
