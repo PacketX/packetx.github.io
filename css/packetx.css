@@ -349,3 +349,7 @@ th.diagonalFalling span {
     display:inline-block;
     vertical-align:top;
 }
+.product-update dl {
+    display:inline-block;
+    width:49%;
+}
