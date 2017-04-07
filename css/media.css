@@ -186,18 +186,21 @@ h2{
 	text-align:right;
 }
 .pro1{
-	text-align:center;
+    text-align:center;
 }
 .container-fluid{
-	/*background:rgba(255,255,255,0.95);*/
-	height:auto;
+    /*background:rgba(255,255,255,0.95);*/
+    height:auto;
 }
 #packetx-navbar{
-	height:auto;
+    height:auto;
 }
 #packetx-navbar .nav.navbar-nav{
-	height:auto!important;
+    height:auto!important;
     transform:none;
+}
+.specpic{
+    width:100%;
 }
 }
 @media screen and (max-width:500px){
