@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<title>packetx website 瑞擎數位有限公司網站</title>
+<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+<style type="text/css">
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, th, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-family: Microsoft JhengHei ;
+    vertical-align:baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+body, html{
+    height:100%;
+    width:100%;
+    line-height:25px;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+div, a, span, p{
+    font-family: Microsoft JhengHei ;
+    text-decoration:none;
+}
+.news2018{
+    text-align: left;
+    margin: 0 auto 30px auto;
+    width: 1100px;
+    font-size: 15px;
+    line-height: 25px;
+}
+.title{
+    background: url(images/kv-paging.jpg);
+    background-position: 0 -70px;
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+}
+.title div{
+    background: #01ffff;
+    width: 750px;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+    padding-left: 20px;
+    border-left: 8px solid #fff100;
+    text-align: left;
+    margin-top: 50px;
+}
+.cont{
+    margin-top: 30px;
+    border-top: 2px solid #ccc;
+}
+.date{
+    font-size: 13px;
+    color: #ccc;
+    padding: 20px 0;
+}
+.strong{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+}
+p{
+    margin: 15px 0;
+}
+a{
+    color: #005693;
+}
+
+</style>
+</head>
+
+<body>
+<div class="title">
+    <div><img src="images/kv-logo.png" /></div>
+</div>
+<div class="news2018">
+    <h1>旁路交換器助陣，利用網路可視性 (Network Visibility) 平台打造多層資安防禦機制</h1>
+    <div class="cont">
+        <div class="date">文/ | 2018/01/24 10:01:37 星期三 發表</div>
+        <div><img src="images/zenya960_1.jpg" /></div>
+        <p class="strong">“國立暨南國際大學張瑛杰助理教授，在2017年的APNIC發表論文時指出：「網路安全設備無法跟上流量成長，致使網路安全設過載而喪失防禦功能，這已是長期的資安隱憂，因此，透過流量辨識技術精準阻斷黑名單(共享威脅情資或BT)、放行白名單(比如多媒體串流)，讓網路安全設備降載，是唯一可行的策略，企業也可以額外得到延長設備使用年限的成本效益。」”</p>
+        <p>當前的網路安全體系已逐步發展出多層防禦機制：從出口閘道到內網端點，由FW/WAF/IPS/IDS/DLP乃至APT方案等構成多層交錯防線。然而流量成長與IT創新(如虛擬化環境)導致網路複雜度增加，這使得建構高效率的多層防禦體系成為艱難的挑戰。先匯聚鏡像流量，並佐以IP/Port過濾的傳統網路可視化功能，已不足因應。</p>
+        <p>辰亞科技創辦人黃麒峰表示，不少客戶對於資安設備在斷線防護上，缺乏防護等級認知，並認為資安設備的網卡具備斷電旁路功能即可；或是認為有了HA架構，就沒有斷線的疑慮了。殊不知以上兩種都無法避免inline主機當機所帶來的斷線風險。</p>
+        <p>其次，珍貴的資安分析資源未被善用：比如未針對不同的監控任務分配不同的流量，又或未能排除低風險流量如多媒體串流，以及讓隧道封裝後的流量直接進入資安設備等等…</p>
+        <p>以上難題的解答即是佈署辰亞科技代理的Silicom Bypass Switch與PacketX高效網路可視性平台。Silicom能夠有效偵測inline資安設備當機與自身當機，並及時bypass以免造成網路斷線；PacketX網路可視性平台可以支援inline架構，並讓特定應用層封包直接bypass 資安設備進而降載(off-load)其吞吐量</p>
+        <p>PacketX技術長王騰嶽指出，PacketX與Silicom合作的方案可打造完整的多層防禦機制，且能提昇資安分析效益、修補防禦漏洞甚至參與第一線防禦：1. 利用NetFlow V5/V9產出機制協助全網路之異常行為的偵測；2. 建置多套SSL解密設備時，利用inline bypass確保網路暢通並透過同步機制防止單點失效所造成加解密的錯亂；3. 善用更細緻的DPI應用層過濾，提升資安設備效能卻不造成防護漏洞：4. 協助既有資安設備檢查VxLAN/GRE/QinQ等隧道內封包以及虛擬機彼此通訊的流量；5. 搭配聯防機制匯入大量IP/Domain/URL黑名單以為阻斷並減輕Firewall/IPS負載。</p>
+        <p class="strong">重量級用戶經驗，實際部署案例</p>
+        <p>國立交通大學資訊技術服務中心網路組組長高義智博士認為，「交大校園網路的開放環境已孕育出不少創新的網路服務。隨著TANET骨幹頻寬升級，師生可得到更多的資源作為創新的基礎，但這對資安機制卻是更嚴峻的挑戰﹍」然而高博士早已準備好中長期的解決方案：「前年開始注意到由交大校友創立的PacketX國產新興品牌，開始評估測試後，不論在功能與CP值，一路通過各項考驗，因此去年部署Silicom與PacketX高效能網路可視性平台，非以IP/port而是以DPI等級的封包payload特徵辨識能力來精確分離出低風險流量如多媒體串流服務，並直接阻斷高風險流量，達到大幅降載資安設備流量的目的。同時萃取全部流量之非取樣Netflow以利偵測即時攻擊與完整IP軌跡留存，達成網路組兼顧校園網路開放與資安監控的使命。」</p>
+    </div>
+    <div>文章出處：<a href="https://cyber.ithome.com.tw/news-page/2795" target="_blank">https://cyber.ithome.com.tw/news-page/2795</a></div>
+    <div>活動網址：<a href="https://cyber.ithome.com.tw/" target="_blank">https://cyber.ithome.com.tw/</a></div>
+</div>
+</body>
+</html>
