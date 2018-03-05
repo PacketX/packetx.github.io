@@ -52,7 +52,7 @@ body,html{
 	line-height:18px;
     transform:translateY(32px);
 }
-.nav.navbar-nav a{
+.nav.navbar-nav > li > a{
     padding-top:0;
     padding-bottom:0;
 }
