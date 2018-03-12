@@ -25,8 +25,9 @@ function switchBG() {
 	$bg.children("div:first").fadeToggle(ELAPSED);
 	$bg.children("div:last").fadeToggle(ELAPSED, "swing", function() {
 		bgIndex = (bgIndex + 1) % BG_COUNT;
-		$(".kv > div:hidden").removeClass().addClass("kv" + ((bgIndex + 1) % BG_COUNT + 1).toString())
-            .find('h1').html(SLOGAN1[bgIndex] + '<br/>' + SLOGAN2[bgIndex]);
+        var ni = (bgIndex + 1) % BG_COUNT;
+		$(".kv > div:hidden").removeClass().addClass("kv" + (ni + 1).toString())
+            .find('h1').html(SLOGAN1[ni] + '<br/>' + SLOGAN2[ni]);
 		window.setTimeout(switchBG, INTERVAL);
 	});
 }
