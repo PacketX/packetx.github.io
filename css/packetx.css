@@ -113,9 +113,13 @@ body,html{
 	background:url(../images/kv03.jpg) no-repeat center;
 	display:none;
 }
+.kv4{
+	background:url(../images/kv04.jpg) no-repeat center;
+	display:none;
+}
 h1{
 	position:absolute;
-	font-size:40px;
+	font-size:100%;
 	color:#fabe00;
 	font-weight:500;
 	font-style:italic;
