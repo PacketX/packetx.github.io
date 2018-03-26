@@ -15,19 +15,28 @@ var INTERVAL = 5000;
 var ELAPSED = 800;
 var BG_COUNT = 4;
 var bgIndex = 0;
+var ni1 = 0;
 $(document).ready(function(e) {
-    $(".kv > div:visible").find('h1').html(SLOGAN1[0] + '<br/>' + SLOGAN2[0]);
-    $(".kv > div:hidden").find('h1').html(SLOGAN1[1] + '<br/>' + SLOGAN2[1]);
+    $(".kv > div:visible").find('h1').html(SLOGAN1[0]);
+    $(".kv > div:hidden").find('h1').html(SLOGAN1[1]);
 	window.setTimeout(switchBG, INTERVAL);
 });
 function switchBG() {
 	var $bg = $(".kv");
 	$bg.children("div:first").fadeToggle(ELAPSED);
 	$bg.children("div:last").fadeToggle(ELAPSED, "swing", function() {
+		if(bgIndex+1 == BG_COUNT)
+			ni1 = (ni1 +1) % 2;
 		bgIndex = (bgIndex + 1) % BG_COUNT;
         var ni = (bgIndex + 1) % BG_COUNT;
-		$(".kv > div:hidden").removeClass().addClass("kv" + (ni + 1).toString())
-            .find('h1').html(SLOGAN1[ni] + '<br/>' + SLOGAN2[ni]);
+        if(ni1){
+			$(".kv > div:hidden").removeClass().addClass("kv" + (ni + 1).toString())
+            .find('h1').html(SLOGAN1[ni]);
+        }
+        else{
+        	$(".kv > div:hidden").removeClass().addClass("kv" + (ni + 1).toString())
+            .find('h1').html(SLOGAN2[ni])
+        }
 		window.setTimeout(switchBG, INTERVAL);
 	});
 }

@@ -181,6 +181,10 @@ h1{
 	text-align:center;
 	display:block;
 }
+.dl{
+	width:70px !important;
+	margin-left: 70%;
+}
 .garybt:hover{
 	background-color: #999;
 }
