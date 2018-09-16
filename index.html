@@ -1,126 +1,168 @@
-<!doctype html>
+<?php
+header("Author: Kumayo~~~");
+?>
 <html>
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="application-name" content="packetx website 瑞擎數位股份有限公司網站"/>
-<meta name="description" content="PacketX’s focus is developing DPI-enabled systems for IP network in three fields: sophisticated network visibility, off-line packet stream analysis and packet2BigData."/>
-<meta name="keywords" content="DPI-enabled systems, Deep packet inspection, Sophisticated Network Visibility, Off-line Packet Stream Analysis, Packet2BigData, Metadata extraction, packetx, Clever TAP, GRISM, TURING, ENLIGHTEN, 瑞擎數位股份有限公司"/>
-<title>:::PacketX Technology 瑞擎數位股份有限公司:::</title>
-<link rel="shortcut icon" href="images/ico.ico"/>
-<link href="css/reset.css" rel="stylesheet" type="text/css" />
-<link href='https://fonts.googleapis.com/css?family=Poppins:400,700,500,300,600' rel='stylesheet' type='text/css'/>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"/>
-
-<link href="css/packetx.css" rel="stylesheet" type="text/css" />
-<link href="css/media.css" rel="stylesheet" type="text/css" />
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/packetx.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-70134379-2', 'auto');
-  ga('send', 'pageview');
-
-</script>
-</head>
-
-<body>
-<!--<div class="top">
-	<div class="logo"><img src="images/packetx.png"/></div>
-    <div class="nav">
-    	<a href="#"><span>Enlighten</span></a>
-        <a href="grism.html"><span>Grism</span></a>
-        <a href="#"><span>Turing</span></a>
-        <a href="about.html"><span>About Us</span></a>
-        <a href="news.html"><span>News</span></a>
-        <a href="contact.html"><span>Contact Us</span></a>
-    </div>
-    <div class="mob">
-        <span class="toggle"><img src="images/m_nav.png"/></span>
-        <div class="m_nav">
-            <ul>
-                <li><a href="#"><span>Enlighten</span></a></li>
-                <li><a href="grism.html"><span>Grism</span></a></li>
-                <li><a href="#"><span>Turing</span></a></li>
-                <li><a href="about.html"><span>About Us</span></a></li>
-                <li><a href="news.html"><span>News</span></a></li>
-                <li><a href="contact.html"><span>Contact Us</span></a></li>
-            </ul>
-        </div>
-    </div>
-</div>-->
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#packetx-navbar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><img alt="PacketX" src="images/packetx.png" height="39" width="120"/><span class="sr-only">(current)</span></a>
-    </div>
-    
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="packetx-navbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="nav-item"><a class="nav-link" href="about.html"><span>About Us</span></a></li><!--
-        <li><a href="#"><span>Enlighten</span></a></li>
-        <li><a href="grism.html"><span>Grism</span></a></li>
-        <li><a href="#"><span>Turing</span></a></li>-->
-	<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarProduct" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span>Product</span>
-          </a>
-	        <ul class="dropdown-menu">
-            <li><a href="grism.html">Grism</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="download.html"><span>Download</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="news.html"><span>News</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html"><span>Contact Us</span></a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-<div class="kv">
-    <div class="kv1"><h1>Defining A  Brave New Network</h1></div>
-    <div class="kv2"><h1>Defining A  Brave New Network</h1></div>
-</div>
-<div class="news">
-    <div>
-        <a href="https://cyber.ithome.com.tw/news-page/2795" target="_blank"><h2><img src="images/packetx_p18.png"/>2018臺灣資訊安全大會</h2>
-        <div class="newspic"><img src="images/news.jpg"/></div>
-        <div class="newscont">PacketX(瑞擎數位)產品GRISM可協助企業與電信公司打造監測網，進而使網路資安設備的效益極大化...</div></a>
-        <div class="garybt"><a href="news.html">more</a></div>
-    </div>
-	<div>
-        <a href="about.html"><h2><img src="images/packetx_p18.png"/>當萬物在邊緣相遇</h2>
-        <div class="newspic"><img src="images/packetx_p03.png" width="200" /></div>
-        <div class="newscont">以電信邊緣運算與窄頻傳輸啟動IoT商業模式：打造更安全更低延遲的電信企業整合應用</div></a>
-        <div class="garybt dl"><a href="DL/20180316_4YFN_PacketX_MEC_Platform.ppsx">Download</a></div>
-    </div>
-    <div>
-        <a href="DL/PacketX.ppsx" download><h2><img src="images/packetx_p18.png"/>以網路可視化平台（Network Visibility Platform）為樞紐之網路安全設備佈署策略</h2>
-        <div class="newspic"><img src="images/packetx_p02.png" width="200" /></div>
-        <!--<div class="newscont">Mirroring traffic on IP network is more important than ever. The traffic...</div>-->
-        <div class="garybt dl"><a href="DL/PacketX.ppsx">Download</a></div>
-    </div>
-</div>
-<div class="footer">
-	<div>© 2016 PacketX Technology Inc. All Rights Reserved.</div>
-</div>
-</body>
+	<head>
+		<!-- Kumayo~~~  -->
+ 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>PacketX</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
+		<link href="css/style_v2.css" rel="stylesheet" media="screen">
+ 		<meta property="og:url" content="https://packetx.biz/">
+		<meta property="og:site_name" content="PacketX">
+		<meta property="og:image" content="https://packetx.biz/assets/img/logo.png">
+	</head>
+	<body>
+		<div class="content home">
+			<div class="nav">
+				<div class="detail">
+					<div class="logo">
+						<a href="index.php"><img src="assets/img/logo.png" alt="PacketX"></a>
+					</div>
+					<ul class="menu">
+						<li><a href="https://packetx.biz/about.html"><p>About Us</p></a></li>
+						<li><a href="https://packetx.biz/grism.html"><p>Products</p></a></li>
+						<li><a href="https://packetx.biz/news.html"><p>News</p></a></li>
+						<li><a href="https://packetx.biz/contact.html"><p>Contact Us</p></a></li>
+					</ul>
+					<div class="icon"><img src="assets/img/bar.svg" onclick="open_menu()"></div>
+					<ul class="menu_m">
+						<li><a href="https://packetx.biz/about.html"><p>About Us</p></a></li>
+						<li><a href="https://packetx.biz/grism.html"><p>Products</p></a></li>
+						<li><a href="https://packetx.biz/news.html"><p>News</p></a></li>
+						<li><a href="https://packetx.biz/contact.html"><p>Contact Us</p></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="detail">
+					<p>Proactive Visibility Consolidates Network Security</p>
+				</div>
+			</div>
+			<div class="slogan">
+				<div class="detail">
+					<div class="name">The Protector of Security.</div>
+					<div class="info">
+						<div class="each">
+							<div class="img"><img src="assets/img/icon1.png" alt="Pervasive Inspection"></div>
+							<div class="title">Pervasive Inspection</div>
+							<div class="content">Find potential threats with DPI,  black list, 3rd party intelligence and threats hiding in Virtual Machine.</div>
+						</div>
+						<div class="each">
+							<div class="img"><img src="assets/img/icon2.png" alt="Security Function Offloading"></div>
+							<div class="title">Security Function Offloading</div>
+							<div class="content">Allow PSI work more efficient by  aggregating, filtering, redistributing the packet at first place.</div>
+						</div>
+						<div class="each">
+							<div class="img"><img src="assets/img/icon3.png" alt="Perimeter Defense"></div>
+							<div class="title">Perimeter Defense</div>
+							<div class="content">Protect your intranet from attacks from outside.</div>
+						</div>
+					</div>
+					<div class="button yellow"><a href="https://packetx.biz/grism.html"><p>Learn more</p></a></div>
+				</div>
+			</div>
+			<div class="specification">
+				<div class="detail">
+					<div class="each">
+						<div class="content">Non-sampling</div>
+						<div class="title">1:1</div>
+						<div class="content">Metadata Extraction</div>
+					</div>
+					<div class="each">
+						<div class="content">Save</div>
+						<div class="title">30 - 50%</div>
+						<div class="content">Security Processing</div>
+					</div>
+					<div class="each">
+						<div class="content">Block</div>
+						<div class="title">2 Million</div>
+						<div class="content spec">IPs/Domains with 3rd Party Intelligence Synch</div>
+					</div>
+				</div>
+			</div>
+			<div class="products">
+				<div class="detail">
+					<div class="name">Products</div>
+					<div class="info">
+						<div class="pic"><img src="assets/img/GRISM.png" alt="GRISM"></div>
+						<div class="produc_info">
+							<div>
+								<div class="name">GRISM</div>
+								<div class="content">Enable low-risk traffic escaping and frontline defense.</div>
+								<div class="button yellow"><a href="DL/Grism-DM.pdf" target="_blank"><p>Download</p></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="trusted">
+				<div class="detail">
+					<div class="name">Trusted by</div>
+					<div class="info">
+						<div class="each">
+							<div class="qty">7</div>
+							<div class="content">Government institutions</div>
+						</div>
+						<div class="each">
+							<div class="qty">4</div>
+							<div class="content">Telecoms</div>
+						</div>
+						<div class="each">
+							<div class="qty">2</div>
+							<div class="content">Financial institutions</div>
+						</div>
+					</div>
+					<div class="more">…and more!</div>
+				</div>
+			</div>
+			<div class="clients">
+				<div class="detail">
+					<div class="name">Our Clients</div>
+					<div class="info">
+						<div class="each"><img src="assets/img/client/CHT.png" alt="中華電信"></div>
+						<div class="each"><img src="assets/img/client/T-STAR.png" alt="台灣之星"></div>
+						<div class="each"><img src="assets/img/client/cathaylife.png" alt="國泰人壽"></div>
+						<div class="each"><img src="assets/img/client/CTBC.png" alt="CTBC"></div>
+						<div class="each"><img src="assets/img/client/A-DLINK.png" alt="ADLINK"></div>
+						<div class="each"><img src="assets/img/client/NARlabs.png" alt="NARlabs"></div>
+						<div class="each"><img src="assets/img/client/TTC.png" alt="TTC"></div>
+						<div class="each"><img src="assets/img/client/NTCPD.png" alt="新北警察局"></div>
+						<div class="each"><img src="assets/img/client/MOF.png" alt="財政部"></div>
+						<div class="each"><img src="assets/img/client/MOJ-IB.png" alt="法務部調查局"></div>
+						<div class="each"><img src="assets/img/client/MFA.png" alt="外交部"></div>
+						<div class="each"><img src="assets/img/client/NSB.png" alt="國家安全局"></div>
+						<div class="each"><img src="assets/img/client/Taifo.png" alt="台灣智慧光網"></div>
+						<div class="each"><img src="assets/img/client/TSGH.png" alt="三軍總醫院"></div>
+						<div class="each"><img src="assets/img/client/NCTU.png" alt="NCTU"></div>
+						<div class="each"><img src="assets/img/client/NCNU.png" alt="NCNU"></div>
+						<div class="each"><img src="assets/img/client/NKUHT.png" alt="NKUHT"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div>
+				<div class="info">
+					<p><span id="eesm_1">nospam</span><span>@</span><span id="eesm_2"></span></p>
+					<p>9F.-11, No.488, Jingping Rd., Zhonghe Dist., New Taipei City 23582, Taiwan (R.O.C.)</p>
+				</div>
+				<div class="copyright">
+					<p>© 2018 PacketX Technology Inc. All Rights Reserved. </p>
+				</div>
+			</div>
+		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript">
+				function open_menu(){
+					$(".menu_m").toggle();
+				}
+			</script>
+		<script type="text/javascript">
+			document.getElementById('eesm_1').innerHTML ="sales";
+			document.getElementById('eesm_2').innerHTML ="zib.xtekcap".split("").reverse().join("");
+		</script>
+	</body>
 </html>
